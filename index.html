@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRONCORE FITNESS | Build Strength. Build Discipline.</title>
+    <meta name="description"
+        content="IronCore Fitness is a premium strength and conditioning gym with expert trainers, modern equipment and personalised programs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header__inner">
+            <a href="#home" class="logo" aria-label="IronCore Fitness home">IRON<span>CORE</span>
+                <small>FITNESS</small></a>
+
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#programs" class="nav__link">Programs</a></li>
+                    <li><a href="#trainers" class="nav__link">Trainers</a></li>
+                    <li><a href="#membership" class="nav__link">Membership</a></li>
+                </ul>
+                <a href="#membership" class="btn btn--primary nav__cta">Join Now</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home">
+            <img class="hero__bg" src="images/hero.jpg" alt="" fetchpriority="high">
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <p class="eyebrow">Strength &bull; Discipline &bull; Transformation</p>
+                <h1 class="hero__title">Build Strength.<br><span>Build Discipline.</span></h1>
+                <p class="hero__text">Serious equipment, expert coaching and a community that shows up every day. Train
+                    with purpose at IronCore and become the strongest version of yourself.</p>
+                <div class="hero__actions">
+                    <a href="#membership" class="btn btn--primary btn--lg">Start Training</a>
+                    <a href="#programs" class="btn btn--outline btn--lg">View Programs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== STATS ========== -->
+        <section class="stats" aria-label="IronCore Fitness in numbers">
+            <div class="container stats__grid">
+                <div class="stat">
+                    <p class="stat__number"><span data-count="1500">1,500</span>+</p>
+                    <p class="stat__label">Members</p>
+                </div>
+                <div class="stat">
+                    <p class="stat__number"><span data-count="20">20</span>+</p>
+                    <p class="stat__label">Expert Trainers</p>
+                </div>
+                <div class="stat">
+                    <p class="stat__number"><span data-count="10">10</span>+</p>
+                    <p class="stat__label">Years Experience</p>
+                </div>
+                <div class="stat">
+                    <p class="stat__number"><span data-count="50">50</span>+</p>
+                    <p class="stat__label">Weekly Classes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="section about" id="about">
+            <div class="container about__grid">
+                <div class="about__media reveal">
+                    <img src="images/one.jpg" alt="Rack of dumbbells inside the IronCore Fitness weights area"
+                        loading="lazy">
+                    <div class="about__badge">
+                        <strong>10+</strong>
+                        <span>Years of building stronger people</span>
+                    </div>
+                </div>
+                <div class="about__text reveal">
+                    <p class="eyebrow">About IronCore</p>
+                    <h2 class="section__title">More Than A Gym. <span>A Standard.</span></h2>
+                    <p>IronCore Fitness was built for people who are serious about progress. We focus on strength,
+                        fitness and consistency, because lasting results come from showing up and putting in the work.
+                    </p>
+                    <p>Whether you are lifting for the first time or chasing a personal best, our coaches, equipment and
+                        community are here to help you reach your goals, one session at a time.</p>
+                    <a href="#why-us" class="btn btn--primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROGRAMS ========== -->
+        <section class="section section--dark programs" id="programs">
+            <div class="container">
+                <header class="section__header reveal">
+                    <p class="eyebrow">Our Programs</p>
+                    <h2 class="section__title">Train With <span>Purpose</span></h2>
+                    <p class="section__lead">Six focused programs designed around real goals, led by coaches who track
+                        your progress.</p>
+                </header>
+
+                <div class="programs__grid">
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/four.jpg"
+                                alt="Barbells racked in the strength area" loading="lazy"></div>
+                        <div class="program-card__body">
+                            <h3>Strength Training</h3>
+                            <p>Progressive barbell and dumbbell training to build raw, functional strength.</p>
+                        </div>
+                    </article>
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/three.jpg"
+                                alt="Open training floor with machines" loading="lazy"></div>
+                        <div class="program-card__body">
+                            <h3>Personal Training</h3>
+                            <p>One-on-one coaching with a plan built around your body, schedule and goals.</p>
+                        </div>
+                    </article>
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/two.jpg"
+                                alt="Air bikes lined up beside a chalkboard workout" loading="lazy"></div>
+                        <div class="program-card__body">
+                            <h3>HIIT</h3>
+                            <p>Fast, intense intervals that torch calories and build serious conditioning.</p>
+                        </div>
+                    </article>
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/hero.jpg" alt="Cardio equipment ready for use"
+                                loading="lazy"></div>
+                        <div class="program-card__body">
+                            <h3>Cardio</h3>
+                            <p>Treadmills, bikes and ellipticals to build endurance and a stronger heart.</p>
+                        </div>
+                    </article>
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/two.jpg"
+                                alt="Air bike for high effort conditioning" loading="lazy" class="pos-left"></div>
+                        <div class="program-card__body">
+                            <h3>Weight Loss</h3>
+                            <p>Smart training and accountability that deliver steady, sustainable fat loss.</p>
+                        </div>
+                    </article>
+                    <article class="program-card reveal">
+                        <div class="program-card__image"><img src="images/one.jpg" alt="Dumbbells lined up on a rack"
+                                loading="lazy" class="pos-right"></div>
+                        <div class="program-card__body">
+                            <h3>Muscle Building</h3>
+                            <p>Hypertrophy-focused splits to add size, shape and definition.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE US ========== -->
+        <section class="section why" id="why-us">
+            <div class="container">
+                <header class="section__header reveal">
+                    <p class="eyebrow">Why IronCore</p>
+                    <h2 class="section__title">Built Different. <span>On Purpose.</span></h2>
+                </header>
+
+                <div class="why__grid">
+                    <article class="benefit reveal">
+                        <div class="benefit__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z" />
+                            </svg>
+                        </div>
+                        <h3>Expert Trainers</h3>
+                        <p>Certified coaches with real results who push you and keep your form safe.</p>
+                    </article>
+                    <article class="benefit reveal">
+                        <div class="benefit__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M3 9h2V7h2v10H5v-2H3v-2H1v-2h2V9Zm18 0h-2V7h-2v10h2v-2h2v-2h2v-2h-2V9ZM9 11h6v2H9v-2Z" />
+                            </svg>
+                        </div>
+                        <h3>Modern Equipment</h3>
+                        <p>Commercial-grade machines, free weights and conditioning gear, maintained daily.</p>
+                    </article>
+                    <article class="benefit reveal">
+                        <div class="benefit__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z" />
+                            </svg>
+                        </div>
+                        <h3>Personalized Programs</h3>
+                        <p>Training plans built around your goals, schedule and current fitness level.</p>
+                    </article>
+                    <article class="benefit reveal">
+                        <div class="benefit__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 1.9 2 3.4V19h6v-2.5c0-2.3-4.700-3.500-7-3.500Z" />
+                            </svg>
+                        </div>
+                        <h3>Supportive Community</h3>
+                        <p>Members who cheer each other on, from the first rep to the final set.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TRAINERS ========== -->
+        <section class="section section--dark trainers" id="trainers">
+            <div class="container">
+                <header class="section__header reveal">
+                    <p class="eyebrow">Meet The Team</p>
+                    <h2 class="section__title">Coaches Who <span>Deliver</span></h2>
+                </header>
+
+                <div class="trainers__grid">
+                    <article class="trainer-card reveal">
+                        <div class="trainer-card__photo">
+                            <div class="avatar" role="img" aria-label="Photo placeholder for Emeka Okafor">EO</div>
+                            <ul class="trainer-card__social" aria-label="Emeka Okafor social links">
+                                <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9Zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5Zm5.200-3.200a1.100 1.100 0 1 1 0 2.200 1.100 1.100 0 0 1 0-2.200Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M14 8V6.500c0-.7.200-1 1.200-1H17V2h-2.800C11.300 2 10 3.700 10 6.200V8H7.500v3.500H10V22h4V11.500h2.800L17.300 8H14Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M17.800 3h3l-6.600 7.500L22 21h-6.100l-4.800-6.200L5.600 21h-3l7-8L2.200 3h6.200l4.300 5.700L17.800 3Zm-1.100 16.200h1.700L7.400 4.700H5.600l11.100 14.500Z" />
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                        <div class="trainer-card__info">
+                            <h3>Emeka Okafor</h3>
+                            <p>Strength &amp; Powerlifting</p>
+                        </div>
+                    </article>
+
+                    <article class="trainer-card reveal">
+                        <div class="trainer-card__photo">
+                            <div class="avatar" role="img" aria-label="Photo placeholder for Amara Bello">AB</div>
+                            <ul class="trainer-card__social" aria-label="Amara Bello social links">
+                                <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9Zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5Zm5.200-3.200a1.100 1.100 0 1 1 0 2.200 1.100 1.100 0 0 1 0-2.200Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M14 8V6.500c0-.7.200-1 1.200-1H17V2h-2.800C11.300 2 10 3.700 10 6.200V8H7.500v3.500H10V22h4V11.500h2.800L17.300 8H14Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M17.800 3h3l-6.600 7.500L22 21h-6.100l-4.800-6.200L5.600 21h-3l7-8L2.200 3h6.200l4.300 5.700L17.800 3Zm-1.100 16.200h1.700L7.400 4.700H5.600l11.100 14.500Z" />
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                        <div class="trainer-card__info">
+                            <h3>Amara Bello</h3>
+                            <p>HIIT &amp; Conditioning</p>
+                        </div>
+                    </article>
+
+                    <article class="trainer-card reveal">
+                        <div class="trainer-card__photo">
+                            <div class="avatar" role="img" aria-label="Photo placeholder for David Adeyemi">DA</div>
+                            <ul class="trainer-card__social" aria-label="David Adeyemi social links">
+                                <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9Zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5Zm5.200-3.200a1.100 1.100 0 1 1 0 2.200 1.100 1.100 0 0 1 0-2.200Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M14 8V6.500c0-.7.200-1 1.200-1H17V2h-2.800C11.300 2 10 3.700 10 6.200V8H7.500v3.500H10V22h4V11.500h2.800L17.300 8H14Z" />
+                                        </svg></a></li>
+                                <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M17.800 3h3l-6.600 7.500L22 21h-6.100l-4.800-6.200L5.600 21h-3l7-8L2.200 3h6.200l4.300 5.700L17.800 3Zm-1.100 16.200h1.700L7.400 4.700H5.600l11.100 14.500Z" />
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                        <div class="trainer-card__info">
+                            <h3>David Adeyemi</h3>
+                            <p>Muscle Building &amp; Nutrition</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MEMBERSHIP ========== -->
+        <section class="section pricing" id="membership">
+            <div class="container">
+                <header class="section__header reveal">
+                    <p class="eyebrow">Membership</p>
+                    <h2 class="section__title">Pick Your <span>Plan</span></h2>
+                    <p class="section__lead">No hidden fees. Cancel any time after your first month.</p>
+                </header>
+
+                <div class="pricing__grid">
+                    <article class="plan reveal">
+                        <h3 class="plan__name">Basic</h3>
+                        <p class="plan__price"><span>$29</span>/month</p>
+                        <ul class="plan__features">
+                            <li>Full gym floor access</li>
+                            <li>Open 6am to 10pm</li>
+                            <li>Locker room and showers</li>
+                            <li>Free fitness assessment</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--outline">Choose Basic</a>
+                    </article>
+
+                    <article class="plan plan--featured reveal">
+                        <span class="plan__tag">Recommended</span>
+                        <h3 class="plan__name">Pro</h3>
+                        <p class="plan__price"><span>$59</span>/month</p>
+                        <ul class="plan__features">
+                            <li>Everything in Basic</li>
+                            <li>Unlimited group classes</li>
+                            <li>Personalized training plan</li>
+                            <li>2 trainer sessions per month</li>
+                            <li>Guest pass every month</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--primary">Choose Pro</a>
+                    </article>
+
+                    <article class="plan reveal">
+                        <h3 class="plan__name">Elite</h3>
+                        <p class="plan__price"><span>$99</span>/month</p>
+                        <ul class="plan__features">
+                            <li>Everything in Pro</li>
+                            <li>8 personal training sessions</li>
+                            <li>Nutrition coaching</li>
+                            <li>24/7 gym access</li>
+                            <li>Priority class booking</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--outline">Choose Elite</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS ========== -->
+        <section class="section section--dark testimonials" id="testimonials">
+            <div class="container">
+                <header class="section__header reveal">
+                    <p class="eyebrow">Member Stories</p>
+                    <h2 class="section__title">Real People. <span>Real Results.</span></h2>
+                </header>
+
+                <div class="testimonials__grid">
+                    <figure class="testimonial reveal">
+                        <blockquote>I lost 14kg in five months and gained confidence I never had. The coaches keep you
+                            accountable without ever making you feel judged.</blockquote>
+                        <figcaption>
+                            <span class="avatar avatar--small" aria-hidden="true">C</span>
+                            <div><strong>Chidinma E.</strong><span>Member for 2 years</span></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial reveal">
+                        <blockquote>My deadlift went from 100kg to 180kg in a year. The programming is smart, the
+                            equipment is always clean and the atmosphere is unmatched.</blockquote>
+                        <figcaption>
+                            <span class="avatar avatar--small" aria-hidden="true">T</span>
+                            <div><strong>Tunde A.</strong><span>Member for 3 years</span></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial reveal">
+                        <blockquote>I was nervous about starting, but the community welcomed me from day one. The HIIT
+                            classes are tough in the best way.</blockquote>
+                        <figcaption>
+                            <span class="avatar avatar--small" aria-hidden="true">S</span>
+                            <div><strong>Sandra O.</strong><span>Member for 8 months</span></div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FINAL CTA ========== -->
+        <section class="cta" id="contact">
+            <img class="cta__bg" src="images/four.jpg" alt="" loading="lazy">
+            <div class="cta__overlay"></div>
+            <div class="container cta__content">
+                <h2>Your Strongest Self <span>Starts Today.</span></h2>
+                <p>Walk in for a free tour and a complimentary first session with one of our coaches.</p>
+                <a href="#membership" class="btn btn--primary btn--lg">Join IronCore</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="#home" class="logo">IRON<span>CORE</span> <small>FITNESS</small></a>
+                <p>A premium strength and conditioning gym for people who are serious about progress.</p>
+                <ul class="social" aria-label="IronCore Fitness social media">
+                    <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9Zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5Zm5.200-3.200a1.100 1.100 0 1 1 0 2.200 1.100 1.100 0 0 1 0-2.200Z" />
+                            </svg></a></li>
+                    <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M14 8V6.500c0-.7.200-1 1.200-1H17V2h-2.800C11.300 2 10 3.700 10 6.200V8H7.500v3.500H10V22h4V11.500h2.800L17.300 8H14Z" />
+                            </svg></a></li>
+                    <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M17.800 3h3l-6.600 7.500L22 21h-6.100l-4.800-6.200L5.600 21h-3l7-8L2.200 3h6.200l4.300 5.700L17.800 3Zm-1.100 16.200h1.700L7.400 4.700H5.600l11.100 14.500Z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+
+            <nav class="footer__col" aria-label="Quick links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#trainers">Trainers</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <address>
+                    <p>24 Admiralty Way, Lekki Phase 1<br>Lagos, Nigeria</p>
+                    <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+                    <p><a href="mailto:hello@ironcorefitness.com">hello@ironcorefitness.com</a></p>
+                </address>
+            </div>
+
+            <div class="footer__col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Mon - Fri: 5am - 10pm</li>
+                    <li>Saturday: 7am - 8pm</li>
+                    <li>Sunday: 8am - 6pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; <span id="year">2026</span> IronCore Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
