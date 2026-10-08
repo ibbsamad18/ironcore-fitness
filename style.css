@@ -1,3 +1,12 @@
+/* =========================================================
+   IRONCORE FITNESS - styles.css
+   1. Variables   2. Base   3. Layout helpers   4. Buttons
+   5. Header      6. Hero   7. Stats            8. About
+   9. Programs   10. Why   11. Trainers        12. Pricing
+  13. Testimonials 14. CTA  15. Footer          16. Animations 17. Join modal
+  ========================================================= */
+
+/* ---------- 1. VARIABLES (change colours and spacing here) ---------- */
 :root {
     --color-bg: #0b0b0c;
     --color-surface: #131315;
@@ -263,7 +272,7 @@ h4 {
     transform: scaleX(1);
 }
 
-/* Hamburger button */
+/* Hamburger button (hidden on desktop) */
 .menu-toggle {
     display: none;
     width: 44px;
@@ -620,6 +629,7 @@ h4 {
     transform: scale(1.04);
 }
 
+/* Initials shown when there is no photo yet */
 .avatar {
     display: grid;
     place-items: center;
@@ -964,6 +974,175 @@ h4 {
     .js .reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* ---------- 17. JOIN MODAL & FORM ---------- */
+.modal {
+    width: min(560px, calc(100% - 2rem));
+    max-height: calc(100dvh - 2rem);
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-accent);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    overflow-y: auto;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+.modal[open] {
+    animation: modal-in 0.3s ease;
+}
+
+@keyframes modal-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.modal__panel {
+    position: relative;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.modal__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 0;
+    border-radius: 50%;
+    color: var(--color-muted);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color var(--transition), background var(--transition);
+}
+
+.modal__close:hover {
+    color: #fff;
+    background: var(--color-surface-2);
+}
+
+.modal__title {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.modal__lead {
+    margin-bottom: var(--space-md);
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.modal__success {
+    text-align: center;
+    padding-block: var(--space-md);
+}
+
+.modal__success[hidden] {
+    display: none;
+}
+
+.modal__tick {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--space-md);
+    background: var(--color-accent);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.modal__title span {
+    color: var(--color-accent);
+}
+
+.form {
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+.form__field label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+
+.form__field input,
+.form__field select {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: #fff;
+    font: inherit;
+    transition: border-color var(--transition);
+}
+
+.form__field input:focus,
+.form__field select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.form__field.has-error input {
+    border-color: var(--color-accent);
+}
+
+.form__error {
+    min-height: 1.1rem;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: #ff6b70;
+}
+
+.form__submit {
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.form__note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+}
+
+body.is-locked {
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .form__row {
+        grid-template-columns: 1fr;
     }
 }
 
